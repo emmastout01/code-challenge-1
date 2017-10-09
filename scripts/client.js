@@ -5,6 +5,8 @@ $(document).ready(onReady);
 function onReady() {
   console.log('Document ready.');
   $('#generateBtn').on('click', addDiv);
+  $('.main').on('click', '#swap', swapDiv);
+  $('.main').on('click', '#delete', deleteDiv);
 }
 
 
@@ -15,5 +17,12 @@ function addDiv() {
 numberOfClicks ++;
   $('.main').append('<div class="block"><p>'+numberOfClicks+
   '</p><button id="swap">Swap</button><button id="delete">Delete</button></div>');
+}
 
+function swapDiv() {
+  $('.block').css('background-color', 'yellow');
+}
+
+function deleteDiv() {
+  $(this).parent().remove();
 }
