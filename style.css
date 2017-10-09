@@ -2,9 +2,12 @@
   background-color: red;
   height: 100px;
   margin: 10px;
-  position: relative;
 }
 
 h1 {
   font-family: fantasy;
+}
+
+.yellow-bg {
+  background-color: yellow;
 }

@@ -13,16 +13,18 @@ function onReady() {
 var numberOfClicks = 0;
 
 function addDiv() {
-//Append div to DOM
+//Append div to DOM and show how many times user has clicked 'generate' button
 numberOfClicks ++;
   $('.main').append('<div class="block"><p>'+numberOfClicks+
-  '</p><button id="swap">Swap</button><button id="delete">Delete</button></div>');
+  '</p><button id="swap">Swap Color</button><button id="delete">Delete</button></div>');
 }
 
+//Upon clicking 'swap color' button, swap div color from red to yellow/yellow to red
 function swapDiv() {
-  $('.block').css('background-color', 'yellow');
+  $(this).parent().toggleClass('yellow-bg');
 }
 
+//Upon clicking 'delete' button, delete div
 function deleteDiv() {
   $(this).parent().remove();
 }
