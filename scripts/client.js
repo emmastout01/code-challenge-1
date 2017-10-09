@@ -9,7 +9,6 @@ function onReady() {
   $('.main').on('click', '#delete', deleteDiv);
 }
 
-
 var numberOfClicks = 0;
 
 function addDiv() {

@@ -12,6 +12,6 @@
 
 - [x] In a CSS file, change <div> background-color to red
 
-- [] When 'Swap' is clicked, alter CSS of <div> to change background-color from red to yellow
+- [x] When 'Swap' is clicked, alter CSS of <div> to change background-color from red to yellow
 
 - [x] When "Delete" <button> is clicked, remove its parent <div> container (and all of its contents).
