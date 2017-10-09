@@ -13,6 +13,7 @@ var numberOfClicks = 0;
 function addDiv() {
 //Append div to DOM
 numberOfClicks ++;
-  $('.main').append('<div class="block"><p>' + numberOfClicks +'</p></div>');
+  $('.main').append('<div class="block"><p>'+numberOfClicks+
+  '</p><button id="swap">Swap</button><button id="delete">Delete</button></div>');
 
 }
