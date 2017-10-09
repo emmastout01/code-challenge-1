@@ -4,13 +4,15 @@ $(document).ready(onReady);
 
 function onReady() {
   console.log('Document ready.');
-  $('#generateBtn').on('click', addButton);
+  $('#generateBtn').on('click', addDiv);
 }
 
 
+var numberOfClicks = 0;
 
+function addDiv() {
+//Append div to DOM
+numberOfClicks ++;
+  $('.main').append('<div class="block"><p>' + numberOfClicks +'</p></div>');
 
-function addButton() {
-  $('.main').append('<div class="block"></div>');
-  console.log('div added');
 }
